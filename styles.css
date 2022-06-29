@@ -1,0 +1,505 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Google Sans', sans-serif;
+}
+h1{
+    font-size: 92px;
+    color: #202124;
+    font-weight: 500;
+}
+h2{
+    font-size: 62px;
+    color: #202124;
+    font-weight: 400;
+    letter-spacing: -2px
+}
+h3{
+    font-size: 32px;
+    color: #202124;
+    font-weight: 400;
+}
+h4{
+    font-size: 24px;
+    color: #202124;
+    font-weight: 400;
+}
+p{
+    font-size: 20px;
+    color: #202124;
+    font-weight: 400;
+}
+nav{
+    position: sticky;
+    top:0vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    margin: 0 8% 0 8%;
+}
+.nav-links{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    
+}
+.nav-links li {
+    list-style: none;
+    margin-right: 10vh;
+}
+.nav-links a {
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .logo {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2%;
+    padding: 14px 16px;
+    font-size: 18px;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav .logo {
+        margin-left: 0%;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        background-color: #354552;
+        height: 100vh;
+
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      padding: 0px 16px;
+      font-size: 32px;
+      text-align: left;
+      color: #ffffff;
+    }
+    .topnav.responsive .logo {
+        
+    float: none;
+    display: block;
+    padding: 14px 16px;
+    font-size: 18px;
+    text-align: left;
+    color: #ffffff;
+    }
+  }
+  .fa-fa-bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 1px;
+    background-color: black;
+    margin: 4px 0;
+  }
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 3px) ;
+    transform: rotate(-45deg) translate(-4px, 3px) ;
+    background-color: white;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -3px) ;
+    transform: rotate(45deg) translate(-4px, -3px) ;
+    background-color: white;
+  }
+
+.main-module {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 14px 16px;
+}
+@media screen and (max-width: 600px) {
+    .main-module {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 14px 16px;
+    }
+}
+
+
+.square {
+    margin-left: 1vh;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FE7303;
+}
+.button-container {
+    margin-top: 4vh;
+    position: relative;
+    justify-content: center;
+    align-content: center;   
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 40px;
+    gap: 16px;
+    width: 153.91px;
+    height: 49.98px;
+    background: #D9D9D9;
+    border-radius: 32px;
+}
+.herosection {
+    position: relative;
+    margin: 0 6% 12% 6%;
+}
+.herosection-title{
+    text-align: center;
+    margin: 20vh 0 5vh 0;
+}
+.companysection-img {
+    height: 60vh;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+img {
+    border-radius: 25px;
+}
+.herosection-body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+.herosection-text2 {
+    width: 40%;
+}
+.herosection-text2 h3 {
+    color: #70757a;
+}
+.herosection-body2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2vh;
+}
+.herosection-text3 {
+    width: 30%;
+}
+.herosection-text3 p {
+    color: #70757a;
+}
+.herosection-body3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14%;
+}
+.herosection-text4 {
+    width: 20%;
+}
+.herosection-text5 {
+    width: 60%;
+}
+.herosection-text5 h3 {
+    color: #70757a;
+}
+.herosection-body4 {
+    position: relative;
+    display: flex;
+    margin-top: 1%;
+}
+.service-block {
+    position: relative;
+    margin: 0 5% 0 0;
+}
+.number h3 {
+    color: #70757a;
+}
+.name {
+    margin-bottom: 4%;
+}
+.block-text h4{
+    font-size: 20px;
+    color: #70757a;
+}
+.servicesection {
+    position: relative;
+    margin: 0 6% 10% 6%;
+}
+.servicesection-title {
+    text-align: center;
+    margin: 0vh 0 5vh 0;
+}
+.servicesection-body {
+    position: relative;
+    background-color:#D9D9D9; 
+    border-radius: 25px;
+    height: 60vh;
+}
+.servicesection-button {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 32px;
+    width: 124px;
+    height: 38px;
+    margin: 4vh 0 0 4vh;
+}
+.servicesection-button h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.servicesection-subtitle {
+    position:absolute;
+    top: 10vh;
+    margin-left: 4vh;
+}
+.servicesection-subtitle h3 {
+    color: #ffffff;
+    font-weight: 400;
+}
+.servicesection-text2 {
+    position: absolute;
+    bottom: 4vh;
+    margin-left: 4vh;
+    width: 40%;
+}
+.servicesection-text2 h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.productesection {
+    position: relative;
+    margin: 0 6% 3% 6%;
+}
+.productesection-title {
+    text-align: center;
+    margin: 0vh 0 5vh 0;
+}
+.productesection-body {
+    position: relative;
+    background-color:#D9D9D9; 
+    border-radius: 25px;
+    height: 80vh;
+}
+.productesection-button {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 32px;
+    width: 124px;
+    height: 38px;
+    margin: 4vh 0 0 4vh;
+}
+.productesection-button h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.productesection-subtitle {
+    position:absolute;
+    top: 10vh;
+    margin-left: 4vh;
+}
+.productesection-subtitle h3 {
+    color: #ffffff;
+    font-weight: 400;
+}
+.newsection {
+    position: relative;
+    margin: 0 6% 10% 6%;
+}
+.newsection-title {
+    text-align: center;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1em 2em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "new1 new2 new3 new4";
+    margin-top: 5%;
+  }
+  
+  .new1 { 
+        grid-area: new1;
+        height: 60vh;
+    }
+
+    .new2 { 
+        grid-area: new2;
+        height: 60vh;
+    }
+  
+   .new3 { 
+        grid-area: new3;
+        height: 60vh;
+    }
+  
+  .new4 { 
+        grid-area: new4;
+        height: 60vh;
+    }
+.news-img {
+    background-color: #D9D9D9;
+    height: 48vh;
+    border-radius: 25px;
+}
+.news-date {
+    margin: 6px;
+}
+.news-date p {
+    color: #70757a;
+}
+.contactsection {
+    position: relative;
+    margin: 0 2% 0% 2%;
+    background-color: #2B2B2B;
+    height: 90vh;
+    padding: 30px 16px;
+    border-radius: 25px;
+}
+.contactsection h2 {
+    color: #ffffff;
+}
+.contactsection-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-header {
+    position: relative;
+    margin: 10% 6% 1% 6%;
+}
+.page-title2 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+.page-botton {
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #2B2B2B;
+    border-radius: 32px;
+    width: 124px;
+    height: 38px;
+}
+.page-botton h4 {
+    font-size: 20px;
+    color: #2B2B2B;
+}
+.line {
+    border-top: 1px solid #D9D9D9;
+    opacity: 0.5;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.medios-section {
+    position: relative;
+    margin: 0 6% 10% 6%;
+}
+.mediostitle-section {
+    text-align: center;
+    margin-bottom: 3%;
+}
+.mediosubtitle-section {
+    text-align: center;
+    margin-bottom: 1%;
+}
+.mediosubtitle-section h4 {
+    font-size: 20px;
+    color: #70757a;
+}
+.tabla-medios {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.detalles-maquina {
+    position: relative;
+    display: flex;
+    width: 65%;
+}
+.detalles-maquina h4 {
+    color: #70757a;
+}
+.detalle1 {
+    width: 20%;
+    margin-right: 4%;
+}
+.detalle1 {
+    width: 50%;
+    margin-right: 4%;
+}

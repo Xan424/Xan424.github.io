@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Product+Sans:400&amp;lang=en" nonce="">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="logo">TRACER®</a>
+        <a href="#home">Company</a>
+        <a href="#news">Technology</a>
+        <a href="#about">Servicios</a>
+        <a href="#about">News</a>
+        <a href="#about">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <div class="fa-fa-bar" onclick="myFunction2(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+    </div>
+    <script>
+        function myFunction1() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        function myFunction2(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+    <div class="page-header">
+        <div class="page-botton"><h4>Services</h4></div>
+        <div class="page-title"><h2>From idea to <br> product.</h2></div>
+    </div>
+    <div class="herosection">
+        <div class="herosection-text">
+            <div class="companysection-img"></div>
+            <div class="herosection-body2">
+                <div class="herosection-text3"><p>Mecanizados Tracer lleva desde sus inicios en 2005 proporcionando servicios de Mecanizado
+                    avanzados, en torneado, fresado y maquinas multifunción que permiten una gran flexibilidad
+                    para mecanizar piezas complejas de valor añadido.<p></div>
+                <div class="herosection-text3"><p>En una apuesta decidida por la calidad y el control digital de los procesos, asegurando una
+                    adecuada trazabilidad y repetibilidad de los procesos, por lo que se abordan de manera
+                    competitiva el mecanizado de series cortas, medias y largas.<p></div>
+            </div>
+            <div class="herosection-body3">
+                <div class="herosection-text4"><h3>Apostamos por la Calidad.<h3></div>
+                <div class="herosection-text5"><h3>En Mecanizados Tracer tenemos experiencia en la gestión integral de proyectos por lo que
+                    podemos ser su colaborador de confianza en la materialización de sus productos.<h3></div>
+            </div>
+        </div>
+    </div> 
+    <div class="page-header">
+        <div class="page-title2"><h2>How We Work.</h2></div>
+        <div class="companysection-img"></div>
+        <div class="herosection-body4">
+            <div class="service-block">
+                <div class="number"><h3>01</h3></div>
+                <div class="name"><h3>Calidad.</h3></div>
+                <div class="block-text"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4></div>
+            </div>
+            <div class="service-block">
+                <div class="number"><h3>02</h3></div>
+                <div class="name"><h3>Solvencia.</h3></div>
+                <div class="block-text"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4></div>
+            </div>
+            <div class="service-block">
+                <div class="number"><h3>03</h3></div>
+                <div class="name"><h3>Rapidez.</h3></div>
+                <div class="block-text"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-title2"><h2>Quality.</h2></div>
+        <div class="companysection-img"></div>
+        <div class="herosection-body2">
+            <div class="herosection-text3"><p>El carácter innovador de la empresa permite el acceso a diferentes sectores, siempre
+                aportando nuestra experiencia en el mecanizado complejo y estándares de calidad.<p></div>
+    </div>
+</body>

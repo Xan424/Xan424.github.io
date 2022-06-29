@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Product+Sans:400&amp;lang=en" nonce="">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="logo">TRACER®</a>
+        <a href="#home">Company</a>
+        <a href="#news">Technology</a>
+        <a href="#about">Servicios</a>
+        <a href="#about">News</a>
+        <a href="#about">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <div class="fa-fa-bar" onclick="myFunction2(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+    </div>
+    <script>
+        function myFunction1() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        function myFunction2(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+    <div class="page-header">
+        <div class="page-botton"><h4>Company</h4></div>
+        <div class="page-title"><h2>Tracer® <br> Mecanizados.</h2></div>
+    </div>
+    <div class="herosection">
+        <div class="herosection-text">
+            <div class="companysection-img"></div>
+            <div class="herosection-body2">
+                <div class="herosection-text3"><p>Somos una empresa dedicada al mecanizado de componentes de valor añadido, situada en un
+                entorno de alta tradición industrial. Nos comprometemos en el desarrollando y fabricación de los productos de forma eficiente,
+                forjando relaciones duraderas y sostenibles.<p></div>
+                <div class="herosection-text3"><p>Todo esto con un equipo de profesionales comprometidos y altamente cualificados, en unas
+                instalaciones modernas y flexibles, y siempre en constante mejora y evolución.<p></div>
+            </div>
+            <div class="herosection-body3">
+                <div class="herosection-text4"><h3>Siempre en constante <br> evolución y mejora.<h3></div>
+                <div class="herosection-text5"><h3>Mecanizados Tracer lleva desde sus inicios en 2005 proporcionando servicios de Mecanizado
+                    avanzados, en torneado, fresado y maquinas multifunción que permiten una gran flexibilidad
+                    para mecanizar piezas complejas de valor añadido.<h3></div>
+            </div>
+        </div>
+    </div> 
+    <div class="page-header">
+        <div class="page-title2"><h2>How We Work.</h2></div>
+        <div class="companysection-img"></div>
+        <div class="herosection-body2">
+            <div class="herosection-text3"><p>Somos una empresa dedicada al mecanizado de componentes de valor añadido, situada en un
+                entorno de alta tradición industrial.<p></div>
+    </div>
