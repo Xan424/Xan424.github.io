@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Product+Sans:400&amp;lang=en" nonce="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Product+Sans:400&amp;lang=en"
+        nonce="">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
+<header>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="logo">TRACER®</a>
-        <a href="#home">Company</a>
-        <a href="#news">Technology</a>
-        <a href="#about">Servicios</a>
-        <a href="#about">News</a>
-        <a href="#about">Contact</a>
+        <a href="company.html">Company</a>
+        <a href="services.html">Servicios</a>
+        <a href="products.html">Productos</a>
+        <a href="technology.html">Technology</a>
+        <a href="news.html">News</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
             <div class="fa-fa-bar" onclick="myFunction2(this)">
                 <div class="bar1"></div>
@@ -26,88 +32,154 @@
     </div>
     <script>
         function myFunction1() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
 
         function myFunction2(x) {
-        x.classList.toggle("change");
+            x.classList.toggle("change");
         }
     </script>
+</header>
+    <div class="main">
     <div class="herosection">
         <div class="herosection-text">
-            <div class="herosection-title"><h2>Expert in Machining.</h2></div>
+            <div class="herosection-title">
+                <h2>Expert in Machining.</h2>
+            </div>
             <div class="companysection-img"></div>
             <div class="herosection-body">
                 <div class="herosection-icon"><img src="img/Group 1 (2).png" alt=""></div>
-                <div class="herosection-text2"><h3>Somos una empresa dedicada al mecanizado de componentes de valor añadido, situada en un
-                    entorno de alta tradición industrial.</h3></div>
+                <div class="herosection-text2">
+                    <h4>Somos una empresa dedicada al mecanizado de componentes de valor añadido, situada en un
+                        entorno de alta tradición industrial.</h4>
+                </div>
             </div>
         </div>
     </div>
     <div class="servicesection">
         <div class="servicesection-text">
-            <div class="servicesection-title"><h2>Services.</h2></div>
+            <div class="servicesection-title">
+                <h2>Services.</h2>
+            </div>
             <div class="servicesection-body">
-            <div class="servicesection-button"><h4>Services</h4></div>
-            <div class="servicesection-subtitle"><h3>Servicios Avanzados.</h3></div>
-            <div class="servicesection-text2"><h4>Mecanizados Tracer lleva desde sus inicios en 2005 proporcionando servicios de Mecanizado
-                avanzados, en torneado, fresado y maquinas multifunción que permiten una gran flexibilidad
-                para mecanizar piezas complejas de valor añadido.</h4></div>
+                <div class="servicesection-button">
+                    <h4>Services</h4>
+                </div>
+                <div class="servicesection-subtitle">
+                    <h3>Servicios Avanzados.</h3>
+                </div>
+                <div class="servicesection-text2">
+                    <h4>Mecanizados Tracer lleva desde sus inicios en 2005 proporcionando servicios de Mecanizado
+                        avanzados, en torneado, fresado y maquinas multifunción que permiten una gran flexibilidad
+                        para mecanizar piezas complejas de valor añadido.</h4>
+                </div>
             </div>
         </div>
     </div>
     <div class="productesection">
         <div class="productesection-text">
-            <div class="productesection-title"><h2>Products.</h2></div>
-            <div class="productesection-body">
-            <div class="productesection-button"><h4>Product</h4></div>
-            <div class="productesection-subtitle"><h3>Aeronautica.</h3></div>
-        </div>
+            <div class="productesection-title">
+                <h2>Products.</h2>
+            </div>
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true }'>
+                <div class="gallery-cell">
+                    <div class="productesection-body">
+                        <div class="productesection-button"><h4>Product</h4></div>
+                        <div class="productesection-subtitle"><h3>Aeronautica.</h3></div>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="productesection-body">
+                        <div class="productesection-button"><h4>Product</h4></div>
+                        <div class="productesection-subtitle"><h3>Oil and Gas.</h3></div>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="productesection-body">
+                        <div class="productesection-button"><h4>Product</h4></div>
+                        <div class="productesection-subtitle"><h3>Bienes de Equipo.</h3></div>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="productesection-body">
+                        <div class="productesection-button"><h4>Product</h4></div>
+                        <div class="productesection-subtitle"><h3>Nautica.</h3></div>
+                    </div>
+                </div>
+            </div>
             <div class="button-container">
             </div>
         </div>
     </div>
     <div class="servicesection">
         <div class="servicesection-text">
-            <div class="servicesection-title"><h2>How Tracer Works.</h2></div>
+            <div class="servicesection-title">
+                <h2>How Tracer Works.</h2>
+            </div>
             <div class="servicesection-body">
-            <div class="servicesection-button"><h4>Technology</h4></div>
-            <div class="servicesection-subtitle"><h3>Nuestros Medios.</h3></div>
-            <div class="servicesection-text2"><h4>Mecanizados Tracer dispone de medios modernos totalizando una capacidad de casi 37.000 horas anuales de mecanizado 5 ejes, para piezas de hasta 1.000 x 1.000 x 1.000 mm de tamaño.</h4></div>
+                <div class="servicesection-button">
+                    <h4>Technology</h4>
+                </div>
+                <div class="servicesection-subtitle">
+                    <h3>Nuestros Medios.</h3>
+                </div>
+                <div class="servicesection-text2">
+                    <h4>Mecanizados Tracer dispone de medios modernos totalizando una capacidad de casi 37.000 horas
+                        anuales de mecanizado 5 ejes, para piezas de hasta 1.000 x 1.000 x 1.000 mm de tamaño.</h4>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="newsection">
         <div class="newsection-text">
-            <div class="newsection-title"><h2>News.</h2></div></div>
-            <div class="container">
-                <div class="new1">
-                    <div class="news-img"></div>
-                    <div class="news-date"><p>January, 2022</p></div>
-                    <div class="news-title"><h4>Lorem ipsum dolor is amet.</h4></div>
-                </div>
-                <div class="new2">
-                    <div class="news-img"></div>
-                    <div class="news-date"><p>January, 2022</p></div>
-                    <div class="news-title"><h4>Lorem ipsum dolor is amet.</h4></div>
-                </div>
-                <div class="new3">
-                    <div class="news-img"></div>
-                    <div class="news-date"><p>January, 2022</p></div>
-                    <div class="news-title"><h4>Lorem ipsum dolor is amet.</h4></div>
-                </div>
-                <div class="new4">
-                    <div class="news-img"></div>
-                    <div class="news-date"><p>January, 2022</p></div>
-                    <div class="news-title"><h4>Lorem ipsum dolor is amet.</h4></div>
-                </div>
-              </div>
+            <div class="newsection-title">
+                <h2>News.</h2>
+            </div>
         </div>
+        <div class="container">
+            <div class="new1">
+                <div class="news-img"></div>
+                <div class="news-date">
+                    <p>January, 2022</p>
+                </div>
+                <div class="news-title">
+                    <h4>Lorem ipsum dolor is amet.</h4>
+                </div>
+            </div>
+            <div class="new2">
+                <div class="news-img"></div>
+                <div class="news-date">
+                    <p>January, 2022</p>
+                </div>
+                <div class="news-title">
+                    <h4>Lorem ipsum dolor is amet.</h4>
+                </div>
+            </div>
+            <div class="new3">
+                <div class="news-img"></div>
+                <div class="news-date">
+                    <p>January, 2022</p>
+                </div>
+                <div class="news-title">
+                    <h4>Lorem ipsum dolor is amet.</h4>
+                </div>
+            </div>
+            <div class="new4">
+                <div class="news-img"></div>
+                <div class="news-date">
+                    <p>January, 2022</p>
+                </div>
+                <div class="news-title">
+                    <h4>Lorem ipsum dolor is amet.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
