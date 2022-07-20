@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i|Google+Sans:400,500|Product+Sans:400&amp;lang=en"
+        nonce="">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body class="mobile">
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="logo">TRACER®<div class="dot"></div></a>
+        <ul>
+            <li><a href="#company">Company</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Productos</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="news.html">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+            <div class="fa-fa-bar" onclick="myFunction2(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+    </div>
+    <script>
+        function myFunction1() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        function myFunction2(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+</header>
+<div class="page-header">
+    <div class="page-botton"><h4>Contact</h4></div>
+    <div class="page-title"><h2>Trabaja con <br> Nosotros.</h2></div>
+</div>
+<div class="herosection">
+    <div class="herosection-text">
+        <div class="contactsection-body"></div>
+        <div class="herosection-body3">
+            <div class="herosection-text4"><h3>Ponte en contacto con nosotros.<h3></div>
+            <div class="herosection-text5"><h3>C/ Juin, 11, apdo. 49 – 20720 Azkoitia (Gipuzkoa) <br>
+                T: +34 943 85 00 53 <br>
+                E: tracer@mecanizadostracer.com <br>
+                <br>
+                Linkedin <br>
+                Twitter  <br>
+                Instagram
+                <h3></div>
+        </div>
+    </div>
+</div>
